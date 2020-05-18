@@ -73,7 +73,7 @@ figure {
   margin: 0;
 }
 .hero {
-  height: 100vh ;
+  /* height: 100vh; */
   /* background-image: url("https://logotipogratis.com/blog/wp-content/uploads/2018/01/ejemplo-de-simbolo-logo.gif"); */
   background-color: black;
   /* background-size: 500px 300px;
@@ -243,4 +243,26 @@ figure {
   align-items: inherit;
   justify-content: inherit;
   flex-wrap: inherit;
+}
+
+/* First MQ BIG */
+@media screen and (max-width: 1024px) {
+  body {
+    background: red;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    background: green;
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+    background: goldenrod;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    background: silver;
+  }
 }
