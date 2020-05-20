@@ -96,7 +96,7 @@ figure {
   padding: 20px;
 }
 .portafolio figure {
-  width: inherit;
+  /* width: inherit; */
 }
 .project {
   display: flex;
@@ -109,8 +109,6 @@ figure {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  /* flex-shrink: 1;
-  flex-wrap: wrap; */
 }
 .project-title {
   font-size: 30px;
@@ -125,10 +123,14 @@ figure {
   font-size: 20px;
 }
 .project-details {
-  width: 500px;
+  width: 50%;
 }
 .project-imageContainer {
-  width: 500px;
+  width: 50%;
+}
+.project-imageContainer img{
+  width: 100%;
+  max-width: 100%;
 }
 .project-image {
   border-radius: 50px;
@@ -141,11 +143,10 @@ figure {
   margin-left: 10px;
 }
 .event {
-  margin: 10px;
-  width: 480px;
+  margin: 1%;
+  width: 48%;
   border-radius: 10px;
   overflow: hidden;
-  flex-shrink: 0;
   background-color: #f4fbff;
 }
 .event-detail {
@@ -248,15 +249,16 @@ figure {
   display: inherit;
   align-items: inherit;
   justify-content: inherit;
-  flex-wrap: inherit;
-
-  
+  flex-wrap: inherit;  
 }
 
 /* First MQ BIG */
 @media screen and (max-width: 1024px) {
   body {
     background: red;
+  }
+  .container{
+    padding: 0 1em;
   }
 }
 @media screen and (max-width: 767px) {
@@ -280,10 +282,68 @@ figure {
   .header .logo {
     text-align: center;
   }
+  .project {
+    display: block;  
+  }
+  .project-details {
+    width: auto;
+    font-size: 16px;
+  }
+  .project-imageContainer {
+    width: auto;
+  }
+  .project-title  {
+    font-size: 1.5em;
+  }
+  .project-course {
+    font-size: 1.2em;
+  }
+  .project-date {
+    font-size: 1em;
+  }
+  .project-url  {
+    font-size: 1em;
+  }
+  .project-course,  .project-date,  .project-url {
+    margin: .3em 0;
+  }
+  .project-description  {
+    font-size: .8em;
+  }
+  .event {
+    width: auto;
+  }
+  .event img {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 480px) {
   body {
     background: goldenrod;
+  }
+  .project-details {
+    font-size: 12px;
+  }
+  .event-detail {
+    margin: -2em .5em .5em ;
+    padding: 1em;
+  }
+  .contact {
+    display: block;
+    height: auto;
+    padding: 1.5em;
+    text-align: center;
+  }
+  .form-email button {
+    margin: 1em auto;
+  }
+  .form-email h3 {
+    margin-top: 0;
+  }
+  .footer {
+    display: block;
+    text-align: center;
+    border: 1px solid transparent;
   }
 }
 @media screen and (max-width: 320px) {
